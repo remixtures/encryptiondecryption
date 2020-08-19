@@ -27,7 +27,7 @@ The full name - passed in quotes - of a file used to write data to
 
 -alg 
 
-Select the preferred algorithm to implement the Caesar Cypher: "shift" for the shift algorithm and "unicode" for the unicode algorithm.
+Select the preferred algorithm to implement the Caesar Cipher: "shift" for the shift algorithm and "unicode" for the unicode algorithm.
 
 Rules:
 

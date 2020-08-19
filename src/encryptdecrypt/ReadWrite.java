@@ -11,7 +11,8 @@ import java.util.Scanner;
 
 public class ReadWrite {
 
-    public static String readFromFile(Scanner input, CryptoType cryptoType, String mode, int key, String data, String inputFileName,
+    public static String readFromFile(Scanner input, CryptoType cryptoType, String mode,
+                                      int key, String data, String inputFileName,
                                       String result) {
 
         if (data.isBlank() && inputFileName.isBlank()) {
@@ -33,7 +34,8 @@ public class ReadWrite {
         if (outputFileName.isEmpty()) {
             System.out.println(result);
         } else {
-            try (FileWriter writer = new FileWriter(outputFileName); BufferedWriter bfWriter = new BufferedWriter(writer)) {
+            try (FileWriter writer = new FileWriter(outputFileName);
+                 BufferedWriter bfWriter = new BufferedWriter(writer)) {
                 bfWriter.write(result);
             } catch (IOException ex) {
                 System.out.println(ex.getMessage());

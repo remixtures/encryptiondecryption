@@ -1,5 +1,7 @@
 package encryptdecrypt;
 
+import encryptdecrypt.algorithms.AlgorithmType;
+
 import java.util.Scanner;
 
 public class EncryptDecrypt {

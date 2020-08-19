@@ -1,4 +1,4 @@
-package encryptdecrypt;
+package encryptdecrypt.algorithms;
 
 public class UnicodeAlgorithm implements AlgorithmType {
 

@@ -1,5 +1,9 @@
 package encryptdecrypt;
 
+import encryptdecrypt.algorithms.AlgorithmType;
+import encryptdecrypt.algorithms.ShiftAlgorithm;
+import encryptdecrypt.algorithms.UnicodeAlgorithm;
+
 public class CryptoFactory {
 
     AlgorithmType createAlgorithm(String type) {

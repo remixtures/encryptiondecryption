@@ -1,4 +1,4 @@
-package encryptdecrypt;
+package encryptdecrypt.algorithms;
 
 public class ShiftAlgorithm implements AlgorithmType {
 

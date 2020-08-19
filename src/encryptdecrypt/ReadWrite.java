@@ -1,6 +1,6 @@
 package encryptdecrypt;
 
-import encryptdecrypt.algorithms.AlgorithmType;
+import encryptdecrypt.algorithms.CryptoType;
 
 import java.io.BufferedWriter;
 import java.io.FileWriter;
@@ -11,19 +11,19 @@ import java.util.Scanner;
 
 public class ReadWrite {
 
-    public static String readFromFile(Scanner input, AlgorithmType algorithm, String mode, int key, String data, String inputFileName,
+    public static String readFromFile(Scanner input, CryptoType cryptoType, String mode, int key, String data, String inputFileName,
                                       String result) {
 
         if (data.isBlank() && inputFileName.isBlank()) {
             data = input.nextLine();
-            result = algorithm.selectAlgorithm(mode, data, key);
+            result = cryptoType.selectEncryptionDecryption(mode, data, key);
         } else if (!inputFileName.isBlank()) {
             try {
                 data = Files.readString(Paths.get(inputFileName));
             } catch (IOException e) {
                 System.out.println(e.getMessage());
             }
-            result = algorithm.selectAlgorithm(mode, data, key);
+            result = cryptoType.selectEncryptionDecryption(mode, data, key);
         }
         return result;
     }

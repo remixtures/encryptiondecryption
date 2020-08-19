@@ -1,6 +1,6 @@
 package encryptdecrypt.algorithms;
 
-public class ShiftAlgorithm implements AlgorithmType {
+public class ShiftAlgorithm implements CryptoType {
 
     @Override
     public String encrypt(String message, int key) {

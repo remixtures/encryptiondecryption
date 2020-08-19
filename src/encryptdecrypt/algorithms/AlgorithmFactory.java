@@ -1,13 +1,9 @@
-package encryptdecrypt;
+package encryptdecrypt.algorithms;
 
-import encryptdecrypt.algorithms.AlgorithmType;
-import encryptdecrypt.algorithms.ShiftAlgorithm;
-import encryptdecrypt.algorithms.UnicodeAlgorithm;
+public class AlgorithmFactory {
 
-public class CryptoFactory {
-
-    AlgorithmType createAlgorithm(String type) {
-        AlgorithmType algorithm;
+    public CryptoType createAlgorithm(String type) {
+        CryptoType algorithm;
         switch (type) {
             case "unicode" :
                 algorithm = new UnicodeAlgorithm();

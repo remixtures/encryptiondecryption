@@ -1,8 +1,8 @@
 package encryptdecrypt.algorithms;
 
-public interface AlgorithmType {
+public interface CryptoType {
 
-    default String selectAlgorithm(String mode, String message, int key) {
+    default String selectEncryptionDecryption(String mode, String message, int key) {
         String result = "";
         if (mode ==  null || mode.equals("enc")) {
             result = encrypt(message, key);
@@ -14,5 +14,4 @@ public interface AlgorithmType {
 
     String encrypt(String message, int key);
     String decrypt(String message, int key);
-
 }

@@ -1,6 +1,6 @@
 package encryptdecrypt.algorithms;
 
-public class UnicodeAlgorithm implements AlgorithmType {
+public class UnicodeAlgorithm implements CryptoType {
 
     @Override
     public String encrypt(String message, int key) {

@@ -1,6 +1,7 @@
 package encryptdecrypt;
 
-import encryptdecrypt.algorithms.AlgorithmType;
+import encryptdecrypt.algorithms.AlgorithmFactory;
+import encryptdecrypt.algorithms.CryptoType;
 
 import java.util.Scanner;
 
@@ -35,8 +36,8 @@ public class EncryptDecrypt {
     }
 
     public void start() {
-        AlgorithmType algorithm = new CryptoFactory().createAlgorithm(alg);
-        result = ReadWrite.readFromFile(input, algorithm, mode, key, data, inputFileName, result);
+        CryptoType cryptoType = new AlgorithmFactory().createAlgorithm(alg);
+        result = ReadWrite.readFromFile(input, cryptoType, mode, key, data, inputFileName, result);
         ReadWrite.writeToFile(outputFileName, result);
     }
 }

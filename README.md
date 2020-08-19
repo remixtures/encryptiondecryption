@@ -1,4 +1,4 @@
-Command-line based Hyperskill project that uses two simple encryption algorithms for implementing the Caesar Cypher technique:
+Command-line based Hyperskill project that uses two simple encryption algorithms for implementing the Caesar Cipher technique:
 
 1. Shift Algorithm replaces each letter by a given number of positions down the alphabet.
 2. Unicode algorithm adds a fixed ASCII (Unicode) value of each character of a message. 
